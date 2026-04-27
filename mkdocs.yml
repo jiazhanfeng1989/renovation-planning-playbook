@@ -1,0 +1,97 @@
+site_name: Renovation Planning Playbook
+site_description: 家庭装修预算、采购、施工和验收文档站
+site_url: https://jiazhanfeng1989.github.io/renovation-planning-playbook/
+repo_url: https://github.com/jiazhanfeng1989/renovation-planning-playbook
+repo_name: jiazhanfeng1989/renovation-planning-playbook
+edit_uri: edit/main/
+
+docs_dir: docs
+site_dir: site
+
+exclude_docs: |
+  .git/*
+  .github/*
+  .venv/*
+  .superpowers/*
+  assets/*
+  site/*
+  index.html
+  .nojekyll
+  mkdocs.yml
+  requirements.txt
+  README.md
+
+theme:
+  name: material
+  language: zh
+  features:
+    - navigation.sections
+    - navigation.top
+    - navigation.tracking
+    - search.highlight
+    - search.suggest
+    - toc.follow
+    - content.code.copy
+    - content.action.edit
+    - content.action.view
+  palette:
+    - scheme: default
+      primary: teal
+      accent: deep orange
+
+plugins:
+  - search
+
+extra_css:
+  - stylesheets/extra.css
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+  - pymdownx.details
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.magiclink
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+
+nav:
+  - 首页: index.md
+  - 预算与开工准备:
+      - 装修预算总表: 装修资料/01-预算与开工准备/01-装修预算总表.md
+      - 开工前准备清单: 装修资料/01-预算与开工准备/02-开工前准备清单.md
+  - 施工工艺:
+      - 施工工艺总表: 装修资料/02-施工工艺/01-施工工艺总表.md
+      - 施工工艺现场打勾版: 装修资料/02-施工工艺/02-施工工艺现场打勾版.md
+  - 空间专项:
+      - 硬装半包与基础材料: 装修资料/03-空间专项/01-硬装半包与基础材料.md
+      - 施工监管: 装修资料/03-空间专项/02-施工监管.md
+      - 厨房: 装修资料/03-空间专项/03-厨房.md
+      - 卫生间: 装修资料/03-空间专项/04-卫生间.md
+      - 阳台与封窗: 装修资料/03-空间专项/05-阳台与封窗.md
+      - 玄关客餐厅: 装修资料/03-空间专项/06-玄关客餐厅.md
+      - 书房与地暖: 装修资料/03-空间专项/07-书房与地暖.md
+      - 主卧: 装修资料/03-空间专项/08-主卧.md
+      - 儿童房: 装修资料/03-空间专项/09-儿童房.md
+      - 中央空调: 装修资料/03-空间专项/10-中央空调.md
+      - 瓷砖: 装修资料/03-空间专项/11-瓷砖.md
+      - 全屋定制: 装修资料/03-空间专项/12-全屋定制.md
+      - 室内门: 装修资料/03-空间专项/13-室内门.md
+  - 材料采购:
+      - 材料采购总清单: 装修资料/04-材料采购/01-材料采购总清单.md
+      - 材料采购现场打勾版: 装修资料/04-材料采购/02-材料采购现场打勾版.md
